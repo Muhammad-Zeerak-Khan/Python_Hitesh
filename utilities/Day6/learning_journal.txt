@@ -1,0 +1,11 @@
+
+ 🗓️ 2025-09-07 - 03:24 PM
+I learned about file handling
+ Productivity Rating: 4
+
+--------------------------------------------------
+ 🗓️ 2025-09-07 - 03:25 PM
+Today I learned about the datetime module having the formatter %p for AM/PM which was new for me
+ Productivity Rating: 5
+
+--------------------------------------------------
