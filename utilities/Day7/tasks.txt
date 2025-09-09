@@ -1,0 +1,2 @@
+Do the dishes  || not_done
+Complete 1 video of python  || done
