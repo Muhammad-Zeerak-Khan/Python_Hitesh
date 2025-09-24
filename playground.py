@@ -1,5 +1,3 @@
-from weakref import ref
-
 test_list: list[str] = ["First", "Second", "Third"]
 
 # for idx, item in enumerate(test_list, start=1):
@@ -81,11 +79,30 @@ test_list: list[str] = ["First", "Second", "Third"]
 # print(f"The tea prices in EUR are  : {tea_prices_eur}")
 
 
-def test_function(*args, **kwargs):
-    print(f"The positional arguments passed are : {args}")
-    print(f"The first argument passed is : {args[0]}")
-    print(f"The second argument passed is : {args[1]}")
-    print(f"The keyword arguments passed are : {kwargs}")
+# def test_function(*args, **kwargs):
+#     print(f"The positional arguments passed are : {args}")
+#     print(f"The first argument passed is : {args[0]}")
+#     print(f"The second argument passed is : {args[1]}")
+#     print(f"The keyword arguments passed are : {kwargs}")
 
 
-test_function("Zk", "TK", "Mk", first_kw="first", second_kw="second")
+# test_function("Zk", "TK", "Mk", first_kw="first", second_kw="second")
+
+
+class SmartDevice:
+    brand = "HomeTech"
+
+    def __init__(self, device_name, power_status):
+        self.device_name = device_name
+        self.power_status = power_status
+        self.brand = "CustomBrand"
+
+    def get_status(self):
+        print(f"{self.device_name} is {self.power_status} - {self.brand}")
+
+
+AC = SmartDevice(device_name="AC", power_status="ON")
+Fan = SmartDevice(device_name="Fan", power_status="OFF")
+
+AC.get_status()
+Fan.get_status()
